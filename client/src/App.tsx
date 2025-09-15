@@ -136,18 +136,20 @@ function Router() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b bg-card">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-8">
-              <h1 className="text-2xl font-bold text-foreground" data-testid="text-app-title">
-                CRM Dashboard
+      <header className="border-b border-border/50 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center justify-between h-20">
+            <div className="flex items-center gap-12">
+              <h1 className="text-3xl font-bold text-foreground tracking-tight" data-testid="text-app-title">
+                Sophie's CRM
               </h1>
               
               {/* Navigation */}
-              <nav className="flex gap-4">
+              <nav className="flex gap-2">
                 <Button
                   variant={currentView === "dashboard" ? "default" : "ghost"}
+                  size="sm"
+                  className="font-medium"
                   onClick={() => setCurrentView("dashboard")}
                   data-testid="nav-dashboard"
                 >
@@ -156,6 +158,8 @@ function Router() {
                 </Button>
                 <Button
                   variant={currentView === "clients" ? "default" : "ghost"}
+                  size="sm"
+                  className="font-medium"
                   onClick={() => setCurrentView("clients")}
                   data-testid="nav-clients"
                 >
@@ -164,6 +168,8 @@ function Router() {
                 </Button>
                 <Button
                   variant={currentView === "add-client" || currentView === "edit-client" ? "default" : "ghost"}
+                  size="sm"
+                  className="font-medium"
                   onClick={handleAddClient}
                   data-testid="nav-add-client"
                 >
@@ -179,7 +185,7 @@ function Router() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-6xl mx-auto px-6 py-12">
         {renderContent()}
       </main>
     </div>

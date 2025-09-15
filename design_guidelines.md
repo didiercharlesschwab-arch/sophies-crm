@@ -1,80 +1,80 @@
-# CRM Design Guidelines
+# Sophie's CRM Design Guidelines
 
 ## Design Approach
-**Design System Approach** - Using a utility-focused design system for a productivity application that prioritizes efficiency and data management. This CRM is primarily information-dense with structured content requiring clear hierarchy and consistent patterns.
-
-**Selected System**: Material Design principles with modern adaptations for professional business tools, emphasizing clarity, efficiency, and data organization.
+**Design System Approach** - Utility-focused design system optimized for professional productivity. Using Material Design principles with modern minimalist adaptations, emphasizing clarity, efficiency, and premium feel for business users managing client relationships.
 
 ## Core Design Elements
 
 ### A. Color Palette
 **Primary Colors:**
-- Light mode: 236 100% 94% (soft blue-gray background), 220 13% 18% (dark text)
-- Dark mode: 222 84% 5% (deep charcoal background), 210 40% 98% (light text)
+- Light mode: 240 5% 98% (warm white background), 240 10% 15% (charcoal text)
+- Dark mode: 240 10% 8% (deep charcoal background), 240 5% 95% (warm white text)
 
 **Accent Colors:**
-- Success/positive actions: 142 71% 45% (professional green)
-- Warning/pending items: 38 92% 50% (amber for dates/reminders)
-- Critical/overdue: 0 84% 60% (red for urgent items)
+- Primary brand: 220 100% 65% (sophisticated blue for actions)
+- Success indicators: 150 60% 50% (refined green for positive states)
+- Warning states: 35 80% 55% (warm amber for pending items)
+- Critical alerts: 0 70% 55% (muted red for urgent items)
 
 ### B. Typography
 - **Primary Font**: Inter via Google Fonts CDN
-- **Hierarchy**: 
-  - Headers: 600 weight, sizes 24px-32px
+- **Hierarchy**:
+  - Page headers: 700 weight, 28px-36px
+  - Section titles: 600 weight, 20px-24px
   - Body text: 400 weight, 16px base
   - Form labels: 500 weight, 14px
-  - Data values: 400 weight, 15px
+  - Metadata: 400 weight, 13px with reduced opacity
 
 ### C. Layout System
-**Spacing Primitives**: Tailwind units of 2, 4, 6, and 8 for consistent rhythm
-- Tight spacing: p-2, m-2 for compact data rows
-- Standard spacing: p-4, m-4 for form elements
-- Generous spacing: p-6, m-6 for section separation
-- Large spacing: p-8, m-8 for page-level margins
+**Spacing Primitives**: Tailwind units of 3, 6, 8, and 12 for generous, premium spacing
+- Compact elements: p-3, m-3 for tight layouts
+- Standard components: p-6, m-6 for comfortable breathing room
+- Section separation: p-8, m-8 for clear hierarchy
+- Page-level margins: p-12, m-12 for premium whitespace
 
 ### D. Component Library
 
-**Navigation**: 
-- Top navigation bar with CRM logo/title and user profile
-- Simple tab-based navigation: "All Clients", "Add Client", "Dashboard"
+**Navigation:**
+- Clean top navigation with Sophie's CRM wordmark
+- Subtle tab navigation: Dashboard, Clients, Leads, Reports
+- User profile dropdown in top-right corner
 
-**Forms**:
-- Clean input fields with floating labels
-- Grouped sections: Contact Info, Financial Details, Scheduling, Notes
-- Date pickers for scheduling fields
-- Currency inputs with proper formatting
-- Large textarea for notes section
+**Client Management:**
+- Minimal client cards with generous padding
+- Key information hierarchy: Name, Company, Deal Value, Status
+- Subtle shadow and rounded corners for premium feel
+- Clean table view with alternating row backgrounds
 
-**Data Display**:
-- Card-based client list with key information preview
-- Table view option for dense data scanning
-- Status indicators for payment/commission dates
-- Quick action buttons for edit/contact/view details
+**Forms:**
+- Floating label inputs with subtle animations
+- Grouped fieldsets: Contact Details, Business Info, Deal Information
+- Date/time pickers with calendar integration
+- Rich text editor for notes with minimal toolbar
 
-**Client Cards**:
-- Header with client name and company
-- Key metrics: Amount Paid, Next Payment, Next Contact Date
-- Visual indicators for overdue dates or pending actions
-- Expandable notes preview
+**Data Visualization:**
+- Clean progress bars for deal stages
+- Subtle color-coded status indicators
+- Minimal dashboard charts with plenty of whitespace
+- Typography-focused data display over heavy graphics
 
-**Search & Filtering**:
-- Global search bar for client names/emails
-- Filter options: Payment status, Contact due dates, Commission dates
-- Sort options: Alphabetical, Payment amount, Next contact date
+**Search & Filtering:**
+- Prominent search bar with subtle focus states
+- Collapsible filter panel with clean checkboxes
+- Sort dropdown with clear typography hierarchy
 
-### E. Data Visualization
-- Simple progress indicators for deal stages
-- Color-coded date indicators (green=upcoming, amber=due soon, red=overdue)
-- Clean typography hierarchy for financial data
-- Minimal charts for dashboard overview (total revenue, client count)
+### E. Interaction Design
+- Subtle hover states with gentle color transitions
+- Minimal loading states with clean spinners
+- Toast notifications with premium styling
+- Modal dialogs with backdrop blur effects
 
-## Professional Business Tool Focus
-This CRM emphasizes:
-- **Efficiency**: Quick data entry and retrieval
-- **Clarity**: Clear financial and scheduling information
-- **Professional appearance**: Clean, trustworthy interface suitable for client-facing scenarios
-- **Data density**: Comfortable display of multiple data points without clutter
-- **Workflow optimization**: Logical grouping of related fields and actions
+## Premium Minimal Focus
+Sophie's CRM emphasizes:
+- **Generous Whitespace**: Ample breathing room throughout interface
+- **Typography Hierarchy**: Clear information architecture through font weights
+- **Subtle Interactions**: Refined micro-interactions without distraction
+- **Professional Aesthetics**: Clean, trustworthy appearance for business contexts
+- **Focused Workflows**: Logical grouping minimizing cognitive load
 
 ## Images
-No large hero images needed. This is a utility-focused business application where imagery would distract from the data-centric workflow. Any icons should come from Heroicons for consistency with the clean, professional aesthetic.
+No hero images needed. This is a productivity-focused application where large imagery would detract from the clean, data-centric workflow. Use Heroicons exclusively for consistency with the minimal, professional aesthetic. Any placeholder content should use subtle geometric patterns or solid color blocks rather than photography.
